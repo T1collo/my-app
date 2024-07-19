@@ -1,0 +1,64 @@
+.container {
+}
+
+.top {
+  display: flex;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title{
+  font-size: 40px;
+}
+
+.desc{
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  object-fit: cover;
+}
+
+.imageContainer {
+  flex: 1;
+  height: 300px;
+  position: relative;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.logoImage {
+  object-fit: cover;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.content {
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #999;
+  text-align: justify;
+}
+
+.text {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
