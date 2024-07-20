@@ -21,6 +21,18 @@ const Porfolio = () => {
           <span className={styles.title}>Applications</span>
         </Link>
 
+        <Link href="/portfolio/illustrations" className={styles.item}>
+          <span className={styles.title}>Illustrations</span>
+        </Link>
+
+        <Link href="/portfolio/website" className={styles.item}>
+          <span className={styles.title}>Websites</span>
+        </Link>
+
+        <Link href="/portfolio/Application" className={styles.item}>
+          <span className={styles.title}>Applications</span>
+        </Link>
+
       </div>
     </div>
   )

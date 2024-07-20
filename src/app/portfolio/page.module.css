@@ -1,38 +1,70 @@
+/* Main Title Style */
 .mainTitle {
     font-size: 100px;
 }
+
+/* Container Style */
 .container {
+    /* Add any container-specific styles if needed */
 }
 
+/* Style for Titles Above the Items */
 .selectTitle {
-    margin: 20px 0px;
+    margin: 20px 0;
 }
 
+/* Style for Scrollable Items */
 .items {
     display: flex;
     gap: 50px;
+    overflow-x: auto;
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar in Edge and IE */
 }
 
+/* Hide scrollbar for WebKit-based browsers */
+.items::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+/* Hover Effect for Items */
 .items:hover {
-    display: flex;
-    gap: 50px;
-    filter: grayscale(0%);
+    filter: grayscale(0%); /* Remove grayscale filter on hover */
 }
 
+/* Style for Individual Items */
 .item {
     border-radius: 20px;
-    width: 300px;
+    min-width: 300px;
     height: 400px;
     position: relative;
-    background-size: cover !important;
+    background-size: cover !important; /* Ensure background image covers the item */
+    filter: grayscale(100%); /* Default grayscale filter */
+    transition: filter 1s ease; /* Smooth transition for grayscale on hover */
 }
 
+/* Hover Effect on Item */
+.item:hover {
+    filter: grayscale(0%); /* Remove grayscale filter on hover */
+}
+
+/* Title Style */
+.title {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white; /* Default color, you can change as needed */
+}
+
+/* Hover Effect for Title */
 .item:hover .title {
-    color: #53c28b;
-
+    color: #53c28b; /* Change title color on item hover */
 }
 
-
+/* Background Images for Specific Items */
 .item:nth-child(1) {
     background: url("/illustration.png");
 }
@@ -44,26 +76,14 @@
 .item:nth-child(3) {
     background: url("/apps.jpg");
 }
-
-.item:nth-child(1), .item:nth-child(2), .item:nth-child(3) {
-    filter: grayscale(100%);
-
+.item:nth-child(4) {
+    background: url("/illustration.png");
 }
 
-.item:nth-child(1):hover, 
-.item:nth-child(2):hover, 
-.item:nth-child(3):hover 
-{
-    filter: grayscale(0%);
-    transition: ease 1s;
-
+.item:nth-child(5) {
+    background: url("/websites.jpg");
 }
 
-.title {
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    font-size: 40px;
-    font-weight: bold;
+.item:nth-child(6) {
+    background: url("/apps.jpg");
 }
-

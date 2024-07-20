@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import styles from './navbar.module.css';
 import { usePathname } from 'next/navigation';
+import DarkModeToggle from '../DarkModeToggle/DarkModeToggle';
 
 const links = [
     { id: 1, title: "Home", url: "/" },
@@ -23,11 +24,12 @@ const Navbar = () => {
                 Belmont
             </Link>
             <div className={styles.links}>
+                <DarkModeToggle />
                 {links.map(link => (
                     <Link
                         key={link.id}
                         href={link.url}
-                        className={`${styles.link} ${pathname === link.url ? styles.active : ''}`} //if pathname === to link.url then call styles.active
+                        className={`${styles.link} ${pathname === link.url ? styles.active : ''}`}
                     >
                         {link.title}
                     </Link>

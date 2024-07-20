@@ -17,6 +17,11 @@ a {
   color: inherit;                       /*Takes(inherits) color from parent(body)*/           
 }
 
+.light {
+  background-color: #bbb;
+  color: #111;
+}
+
 .container {
   max-width: 1366px;
   min-height: 100vh;
@@ -25,4 +30,5 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 100px;
 }
